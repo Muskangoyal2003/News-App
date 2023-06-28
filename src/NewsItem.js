@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-
 export default class NewsItem extends Component {
   render() {
     const {title,description,imageUrl,newsUrl,author,source} =this.props;
@@ -14,7 +13,7 @@ export default class NewsItem extends Component {
               right:'0'
             }
           }>
-        <span className=" badge rounded-pill bg-danger">
+        <span className= "badge rounded-pill bg-danger">
     {source}
     </span>
     </div>
@@ -25,7 +24,7 @@ export default class NewsItem extends Component {
   </h5>
     <p className="card-text" >{description}....</p>
     <p className="card-text"><small className="text-warning">By {author?author:'Unknown'}</small></p>
-    <a href= {newsUrl} target='_blank'rel='noreferrer' className="btn btn-sm btn-danger">Read more</a>
+    <a href = {newsUrl} target='_blank'rel='noreferrer' className="btn btn-sm btn-danger">Read more</a>
   </div>
 </div>
       </div>
